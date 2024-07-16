@@ -233,6 +233,6 @@ with torch.no_grad():
         all_predictions.extend(outputs.cpu().numpy())
 
 # 予測結果の保存
-np.save('submission_probabilities_last.npy', all_predictions)
+np.save('submission_probabilities.npy', all_predictions)
 print('Predictions saved to submission_probabilities.npy')
 
