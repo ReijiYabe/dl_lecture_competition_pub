@@ -209,11 +209,6 @@ for epoch in range(num_epochs):
     # 学習率の調整
     scheduler.step(val_loss)
 
-# モデルの保存
-model_path = 'MEG_CNN_model.pth'
-torch.save(model.state_dict(), model_path)
-print(f'Model saved to {model_path}')
-
 
 # 前処理をバッチごとに行う関数
 def preprocess_test_batch(dataloader):
